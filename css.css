@@ -1,0 +1,133 @@
+
+
+html,
+body {
+  height: 100%;
+  min-height: 100vh;
+}
+
+body {
+  min-height: 100vh;
+  min-width: 100%;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(rgb(24, 23, 23), rgb(94, 92, 92));
+}
+
+.select {
+  height: 20%;
+  justify-content: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: larger;
+
+}
+
+h1 {
+  text-shadow: 10px 2px 5px rgb(160, 222, 105);
+}
+
+.button {
+  padding: 5px;
+  margin: 30px;
+  border-radius: 8px;
+  background: linear-gradient(rgb(161, 214, 161), rgb(117, 117, 217));
+  font-size: large;
+
+}
+
+.main {
+  height: 80%;
+  /* Set height to 100% instead of min-height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+#digitalclock {
+  box-shadow: 10px 10px 405px rgb(5, 245, 241);
+  width: 100%;
+  height: 45%;
+
+  animation: DigitalAnimation 5s linear -1s infinite running;
+  display: flex;
+  font-size: 160PX;
+  /* justify-content: space-around; */
+  border-radius: 15px;
+  border: 2px solid orange;
+  background: linear-gradient(rgb(186, 239, 234), rgb(140, 144, 231));
+
+}
+
+@keyframes DigitalAnimation {
+  25% {
+    translate: 0 20%;
+  }
+
+  75% {
+    translate: 0 -20%;
+
+  }
+
+}
+
+.timecss {
+  height: 100%;
+  width: 30%;
+  font-size: 175px;
+  font-family: Arial;
+  display: flex;
+  justify-content: center;
+}
+
+#analogclock {
+  height: 400px;
+  width: 400px;
+  background: url(clockbg.jpg) no-repeat;
+  background-size: 100%;
+  margin: auto;
+  border-radius: 50%;
+  box-shadow: 10px 10px 405px rgb(5, 245, 241);
+
+  position: relative;
+}
+
+#analoghour,
+#analogminute,
+#analogsecond {
+  background: black;
+  transform-origin: bottom;
+  border-radius: 10px;
+  position: absolute;
+
+}
+
+#analoghour {
+  height: 30%;
+  width: 4%;
+  left: 48%;
+  top: 20%;
+}
+
+
+#analogminute {
+  height: 35%;
+  width: 3%;
+  left: 48%;
+  top: 16%;
+}
+
+#analogsecond {
+  height: 40%;
+  width: 2%;
+  left: 48%;
+  top: 10%;
+}
+
+#maincontainer2 {
+  display: none;
+}
